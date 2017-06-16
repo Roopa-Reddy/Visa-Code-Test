@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>US Holiday Calendar</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script type="text/javascript" src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+<link href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css" rel="stylesheet"/>
+<script src="app.js"></script>
+<style>
+ul {
+    -moz-column-count: 5;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+}
+table {
+    height: 139px;
+    margin: 20px auto;
+}
+td {
+    width: 200px;
+    border-bottom: 1px solid black;
+}
+</style>
+<meta charset="ISO-8859-1">
+</head>
+<body ng-app="usCalendar" ng-cloak>
+	<ng-view></ng-view>
+</body>
+</html>
